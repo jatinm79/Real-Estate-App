@@ -5,10 +5,10 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import { MapPin, Building2, ArrowLeft, Heart, Share2, Phone, Mail, Bed, Bath, Square, Calendar } from 'lucide-react';
 import Link from 'next/link';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import ImageCarousel from '../../components/ImageCarousel';
-import ContactForm from '../../components/ContactForm';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ImageCarousel from '../components/ImageCarousel';
+import ContactForm from '../components/ContactForm';
 import { propertyAPI } from '@/lib/api';
 import { formatPrice, formatDate } from '@/lib/utils';
 

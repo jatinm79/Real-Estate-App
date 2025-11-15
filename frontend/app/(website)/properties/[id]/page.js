@@ -5,9 +5,9 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import { MapPin, Building2, ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import Header from "../../(website)/components/Header";
-import Footer from "../../(website)/components/Footer";
-import ImageCarousel from "../../(website)/components/ImageCarousel";
+import Header from "../../components/Header";
+import Footer from '../../components/Footer';
+import ImageCarousel from "../../components/ImageCarousel";
 import { propertyAPI } from "@/lib/api";
 import { formatPrice } from "@/lib/utils";
 

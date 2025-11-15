@@ -14,7 +14,6 @@ export default function Header() {
       setIsScrolled(window.scrollY > 10);
     };
 
-    // Check system preference for dark mode
     const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     setDarkMode(isDark);
     
@@ -59,7 +58,6 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
               href="/" 
@@ -80,7 +78,6 @@ export default function Header() {
               Admin
             </Link>
             
-            {/* Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-200 hover:scale-110"
@@ -88,7 +85,6 @@ export default function Header() {
               {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </button>
 
-            {/* Contact Button */}
             <Link 
               href="tel:+15551234567" 
               className="btn btn-primary flex items-center space-x-2"
@@ -98,7 +94,6 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Mobile Menu Button */}
           <div className="flex items-center space-x-4 md:hidden">
             <button
               onClick={toggleDarkMode}
@@ -115,7 +110,6 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md animate-slide-up">
             <nav className="flex flex-col space-y-4">
